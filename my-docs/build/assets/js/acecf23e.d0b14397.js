@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_docs=globalThis.webpackChunkmy_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/kitchen-to-code/blog","blogTitle":"Blog","authorsListPath":"/kitchen-to-code/blog/authors"}')}}]);
