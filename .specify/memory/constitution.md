@@ -1,55 +1,55 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: None -> 1.0.0
+- List of modified principles: All principles were added/defined.
+- Added sections: "Technology Stack", "Development Workflow"
+- Removed sections: None
+- Templates requiring updates:
+    - .specify/templates/plan-template.md (⚠ pending)
+    - .specify/templates/spec-template.md (⚠ pending)
+    - .specify/templates/tasks-template.md (⚠ pending)
+    - .specify/templates/commands/sp.adr.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.analyze.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.checklist.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.clarify.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.constitution.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.git.commit_pr.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.implement.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.phr.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.plan.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.specify.toml (✅ updated - no CLAUDE specific references)
+    - .specify/templates/commands/sp.tasks.toml (✅ updated - no CLAUDE specific references)
+- Follow-up TODOs: None
+-->
+# Unified Book Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+All development adheres to Spec-Driven Development (SDD) principles, ensuring alignment between requirements, design, and implementation. This includes creating detailed specifications (specs), plans, and tasks for every feature.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Claude Code Integration
+Leverage Claude Code for intelligent code generation, refactoring, and analysis. This includes using Claude Code Subagents and Agent Skills for reusable intelligence to enhance development efficiency and quality.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First Approach (Non-Negotiable)
+Strict adherence to Test-Driven Development (TDD). Tests must be written and approved before implementation. The Red-Green-Refactor cycle is mandatory.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Consistency and Convention
+Maintain consistent coding style, structure, and architectural patterns across the project. Adhere to established project conventions and best practices for naming, formatting, and documentation.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Modularity and Reusability
+Design components as modular, reusable units. Prioritize the creation of self-contained libraries and functions to promote code reusability and maintainability.
 
-### [PRINCIPLE_6_NAME]
+### VI. Documentation as Code
+Treat documentation (including PHRs and ADRs) as an integral part of the codebase. Ensure documentation is kept up-to-date and reflects the current state of the project.
 
+## Technology Stack
+The core development will primarily utilize Python for backend logic and scripting, and Markdown for documentation, specifications, and project management artifacts (Spec-Kit Plus). Cloud services will be selected based on project needs, with a preference for serverless architectures.
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+The development workflow emphasizes iterative development, continuous integration, and continuous delivery (CI/CD). All changes must go through a pull request review process, including automated testing and static analysis.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution serves as the foundational document for project governance. All team members must adhere to its principles. Amendments require a formal proposal, team review, and majority approval. Compliance reviews will be conducted regularly.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-28 | **Last Amended**: 2025-11-28
